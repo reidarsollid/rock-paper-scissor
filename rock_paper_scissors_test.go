@@ -14,13 +14,13 @@ func TestGet(t *testing.T) {
 }
 
 func TestRockPaperScissor(t *testing.T) {
-	t.Log("Me = scissor, you = rock")
+	t.Log("Me = scissor, you = rock You win")
 	result := rockPaperScissor(Rock, Scissor)
 	assert.Equal(t, result, "You win")
-	t.Log("Me = rock, you = rock")
+	t.Log("Me = rock, you = rock Tie")
 	result2 := rockPaperScissor(Rock, Rock)
 	assert.Equal(t, result2, "Tie")
-	t.Log("Me = paper, you = rock")
+	t.Log("Me = paper, you = rock I win")
 	result3 := rockPaperScissor(Rock, Paper)
 	assert.Equal(t, result3, "I win")
 }

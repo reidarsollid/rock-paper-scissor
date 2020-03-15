@@ -13,7 +13,7 @@ func (item Item) String() string {
 		"Rock",
 		"Paper",
 		"Scissor"}
-	if item > Rock || item < Scissor {
+	if item < Rock || item > Scissor {
 		return "Unknown"
 	}
 	return items[item]
@@ -27,4 +27,3 @@ func ParseItem(item string) Item {
 
 	return items[item]
 }
-
