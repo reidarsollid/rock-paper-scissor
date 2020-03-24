@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	s, b := Play("Rock")
+	s, b := Play(os.Args[1])
 	fmt.Printf("%s %s", s, b)
+	fmt.Println()
 }
